@@ -6,3 +6,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 RewriteRule ^books/([0-9]+)$ controller/book.php?bookid=$1 [L]
 RewriteRule ^books controller/book.php [L]
+RewriteRule ^books/page/([0-9]+)$ controller/book.php?page=$1    [L]    # Handle page requests
