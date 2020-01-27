@@ -624,10 +624,8 @@ if(array_key_exists("bookid",$_GET)) {
   }
 }
 elseif(empty($_GET)) {
-
   // if request is a GET e.g. get books
   if($_SERVER['REQUEST_METHOD'] === 'GET') {
-
     // attempt to query the database
     try {
       // ADD AUTH TO QUERY
